@@ -55,12 +55,12 @@ public class StudentGenerator {
 
     public String getRandomPhoneNumber() {
         Random rd = new Random();
-        if (rd.nextInt(99) <= 25 )
+        if (rd.nextInt(100) <= 25 )
             return "";
 
         String result = "09";
         for (int i = 0; i < 8; i++)
-            result += rd.nextInt(9);
+            result += rd.nextInt(10);
 
         return result ;
     }
